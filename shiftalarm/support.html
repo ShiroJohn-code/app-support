@@ -33,7 +33,7 @@
 </head>
 <body>
   <h1>ShiftAlarm 支援</h1>
-  <p class="muted">最後更新日期：2026 年 7 月 7 日</p>
+  <p class="muted">最後更新日期：2026 年 11 月 16 日</p>
 
   <p>
     如果你在使用 ShiftAlarm 時遇到問題、需要協助、想回報錯誤，或對 App 有任何建議，
@@ -55,6 +55,34 @@
   </ul>
 
   <h2>常見問題</h2>
+
+  <h3>如何啟用鬧鐘？</h3>
+  <p>
+    先在「班表」建立班別與輪班規則，再到「鬧鐘」的「鬧鐘設定」選擇提醒方式。
+    iOS 26 以上可在授權後使用 AlarmKit 系統鬧鐘；較舊系統使用需要手動安裝與設定的捷徑流程。
+    以 App 顯示的系統確認數量及覆蓋日期核對排程，定期開啟 App 更新。
+    背景刷新由 iOS 決定執行時間，無法保證每天固定時間續排。
+  </p>
+
+  <h3>鬧鐘過了預定時間仍顯示待處理？</h3>
+  <p>
+    「鬧鐘」總覽的「仍待處理的鬧鐘」會列出可確認的保留項目。
+    使用該項目的停止入口後，App 會重新讀取系統狀態；若仍無法確認，請保留畫面並重試。
+    原定時間已過不代表鬧鐘已停止，稍後提醒也可能仍在作用中。
+  </p>
+
+  <h3>換裝置後聲音設定不同？</h3>
+  <p>
+    AlarmKit 聲音偏好由各裝置分別保存，不包含於班表備份。
+    匯入或在其他裝置還原後，請在鬧鐘聲音設定重新選擇；未設定時使用系統預設聲音。
+  </p>
+
+  <h3>如何提供鬧鐘診斷？</h3>
+  <p>
+    可在鬧鐘設定匯出診斷 JSON，再自行決定是否寄至支援信箱。
+    檔案可能包含班別名稱、鬧鐘時間、識別碼、系統版本與時區，寄送前請先檢查內容。
+    匯出不會自動傳送，也不會變更既有鬧鐘。
+  </p>
 
   <h3>通知沒有出現怎麼辦？</h3>
   <p>
@@ -79,7 +107,7 @@
   <hr>
 
   <h1>ShiftAlarm Support</h1>
-  <p class="muted">Last updated: July 7, 2026</p>
+  <p class="muted">Last updated: November 16, 2026</p>
 
   <p>
     If you need help using ShiftAlarm, want to report a bug, or have suggestions for the app,
@@ -101,6 +129,37 @@
   </ul>
 
   <h2>Frequently Asked Questions</h2>
+
+  <h3>How do I enable alarms?</h3>
+  <p>
+    Create shift types and a rotation rule in the Schedule tab, then choose a delivery method in Alarm Settings.
+    On iOS 26 or later, you can authorize AlarmKit system alarms. Older systems use a Shortcuts workflow
+    that requires manual installation and setup. Check the system-confirmed count and coverage dates in the app,
+    and open the app regularly to refresh coverage. iOS controls background refresh timing;
+    daily refresh at a fixed time is not guaranteed.
+  </p>
+
+  <h3>Why does an alarm remain after its scheduled time?</h3>
+  <p>
+    The alarm overview lists identifiable retained items under alarms requiring attention.
+    Use an item's stop control and let the app read the system state again. If removal cannot be confirmed,
+    keep the status visible and retry. A past scheduled time does not prove an alarm has stopped;
+    a snoozed alarm may still be active.
+  </p>
+
+  <h3>Why are sound settings different on another device?</h3>
+  <p>
+    AlarmKit sound preferences are stored separately on each device and are excluded from schedule backups.
+    After importing or restoring on another device, choose sounds again in alarm sound settings.
+    Unconfigured alarms use the system default sound.
+  </p>
+
+  <h3>How can I share alarm diagnostics?</h3>
+  <p>
+    Export a diagnostic JSON file from Alarm Settings and choose whether to email it to support.
+    It may contain shift names, alarm times, identifiers, system version, and time zone; review it before sharing.
+    Exporting does not automatically send the file or change existing alarms.
+  </p>
 
   <h3>What should I do if notifications do not appear?</h3>
   <p>
